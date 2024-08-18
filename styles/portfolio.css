@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #ffa62f;
-  --secondary-color: #ffe8c8;
+  --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -23,11 +23,18 @@ h6 {
 
 h1 {
   font-size: 96px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 64px;
 }
 
 p {
   font-weight: 500;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .hero {
@@ -63,4 +70,43 @@ p {
 .btn-branding:hover {
   background-color: white;
   color: var(--primary-color);
+}
+
+.btn-branding-outline {
+  background: var(--primary-color);
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 46px;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }

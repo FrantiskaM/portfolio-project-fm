@@ -58,6 +58,24 @@ p {
   color: #272142;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
 .btn-branding {
   background: var(--primary-color);
   border-radius: 4px;
@@ -70,6 +88,7 @@ p {
 .btn-branding:hover {
   background-color: white;
   color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .btn-branding-outline {
@@ -85,6 +104,7 @@ p {
 .btn-branding-outline:hover {
   background-color: white;
   color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .project-description {
@@ -93,16 +113,21 @@ p {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 46px;
-    line-height: 1.4;
+    font-size: 44px;
+    line-height: 56px;
   }
 
   h2 {
-    font-size: 42px;
+    font-size: 44px;
   }
 
   .hero {
     padding: 80px 20px;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
 
   .project-description {
